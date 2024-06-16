@@ -1,0 +1,29 @@
+[global]
+frame_color = "#89b4fa"
+separator_color = frame
+origin = bottom-center
+corner_radius = 10
+font = JetBrainsMono Nerd Font
+frame_width = 1
+padding = 12
+horizontal_padding = 12
+progress_bar_corner_radius = 10
+progress_bar_height = 15
+transparency = 10
+
+
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+highlight = "#74c7ec"
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+highlight = "#74c7ec"
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+highlight = "#74c7ec"
+frame_color = "#fab387"
