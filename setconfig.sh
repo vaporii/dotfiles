@@ -22,7 +22,7 @@ if ! fc-list | grep -q "JetBrainsMono Nerd Font"; then
     fc-cache -fv
 fi
 
-dir="${HOME}/.config/dotfiles"
+dir="$."
 dst="${HOME}/.config"
 
 
@@ -36,6 +36,7 @@ cp ${dir}/rofi -r ${dst}/rofi
 cp ${dir}/starship.toml ${dst}/starship.toml
 cp ${dir}/hyfetch.json ${dst}/hyfetch.json
 
+mkdir -p ${dst}/scripts
 cp ${dir}/scripts/media.sh ${dst}/scripts/media.sh
 cp ${dir}/scripts/volume.sh ${dst}/scripts/volume.sh
 
