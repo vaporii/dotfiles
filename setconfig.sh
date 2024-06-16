@@ -1,18 +1,22 @@
 #!/bin/bash
 
-echo "before continuing, ensure you have the following packages installed:"
-echo "(the theme may break if packages are missing, do so at your own risk!!)"
+echo -e "\e[1mBefore continuing, ensure you have the following packages installed:\e[0m"
+echo -e "(the theme may break if packages are missing, do so at your own risk!!)"
 echo ""
-echo "feh (wallpaper): https://archlinux.org/packages/extra/x86_64/feh/"
-echo "dunst (notifications): https://github.com/dunst-project/dunst"
-echo "kitty (terminal) https://sw.kovidgoyal.net/kitty/binary/"
-echo "picom (compositor): https://github.com/yshui/picom"
-echo "polybar (status bar): https://github.com/polybar/polybar"
-echo "rofi (app search): https://github.com/davatorium/rofi"
-echo "rofi emoji (emoji search): https://github.com/Mange/rofi-emoji (rofi-emoji on AUR)"
-echo "[optional] starship (terminal customization): https://starship.rs/guide"
-echo "[optional] hyfetch (silly gay neofetch): https://github.com/hykilpikonna/hyfetch"
-read -p "press enter to continue..." </dev/tty
+
+echo -e "\e[33mfeh (wallpaper):\e[0m \e[4mhttps://archlinux.org/packages/extra/x86_64/feh/\e[0m"
+echo -e "\e[33mdunst (notifications):\e[0m \e[4mhttps://github.com/dunst-project/dunst\e[0m"
+echo -e "\e[33mkitty (terminal):\e[0m \e[4mhttps://sw.kovidgoyal.net/kitty/binary/\e[0m"
+echo -e "\e[33mpicom (compositor):\e[0m \e[4mhttps://github.com/yshui/picom\e[0m"
+echo -e "\e[33mpolybar (status bar):\e[0m \e[4mhttps://github.com/polybar/polybar\e[0m"
+echo -e "\e[33mrofi (app search):\e[0m \e[4mhttps://github.com/davatorium/rofi\e[0m"
+echo -e "\e[33mrofi emoji (emoji search):\e[0m \e[4mhttps://github.com/Mange/rofi-emoji (rofi-emoji on AUR)\e[0m"
+echo -e "\e[2m[\e[0m\e[33moptional\e[0m\e[2m] starship (terminal customization):\e[0m \e[4mhttps://starship.rs/guide\e[0m"
+echo -e "\e[2m[\e[0m\e[33moptional\e[0m\e[2m] hyfetch (silly gay neofetch):\e[0m \e[4mhttps://github.com/hykilpikonna/hyfetch\e[0m"
+echo ""
+
+echo -e "\e[1mThis will overwrite configs in ${HOME}/.config!!\e[0m"
+read -p "Press Enter to continue, Ctrl+C to quit..." </dev/tty
 
 sudo pacman -S --needed wget unzip libnotify
 
@@ -25,13 +29,12 @@ fi
 dir="."
 dst="${HOME}/.config"
 
-
-cp ${dir}/dunst -r ${dst}/dunst
-cp ${dir}/i3 -r ${dst}/i3
-cp ${dir}/kitty -r ${dst}/kitty
-cp ${dir}/picom -r ${dst}/picom
-cp ${dir}/polybar -r ${dst}/polybar
-cp ${dir}/rofi -r ${dst}/rofi
+cp ${dir}/dunst -Rf ${dst}/dunst
+cp ${dir}/i3 -Rf ${dst}/i3
+cp ${dir}/kitty -Rf ${dst}/kitty
+cp ${dir}/picom -Rf ${dst}/picom
+cp ${dir}/polybar -Rf ${dst}/polybar
+cp ${dir}/rofi -Rf ${dst}/rofi
 
 cp ${dir}/starship.toml ${dst}/starship.toml
 cp ${dir}/hyfetch.json ${dst}/hyfetch.json
@@ -40,4 +43,4 @@ mkdir -p ${dst}/scripts
 cp ${dir}/scripts/media.sh ${dst}/scripts/media.sh
 cp ${dir}/scripts/volume.sh ${dst}/scripts/volume.sh
 
-echo "installation complete, please reload your wm (or just reboot your pc)"
+echo -e "\e[1mInstallation complete, please reload your WM (or just reboot your PC)\e[0m"
