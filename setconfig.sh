@@ -14,7 +14,7 @@ echo "[optional] starship (terminal customization): https://starship.rs/guide"
 echo "[optional] hyfetch (silly gay neofetch): https://github.com/hykilpikonna/hyfetch"
 read -p "press enter to continue..." </dev/tty
 
-sudo pacman -S --needed wget unzip
+sudo pacman -S --needed wget unzip libnotify
 
 if ! fc-list | grep -q "JetBrainsMono Nerd Font"; then
     wget -O "/tmp/font.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
