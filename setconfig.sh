@@ -22,6 +22,7 @@ sudo pacman -S --needed wget unzip libnotify
 
 if ! fc-list | grep -q "JetBrainsMono Nerd Font"; then
     wget -O "/tmp/font.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
+    mkdir -p ~/.fonts
     unzip /tmp/font.zip -d ~/.fonts/nerdfonts
     fc-cache -fv
 fi
