@@ -18,7 +18,7 @@ echo ""
 echo -e "\e[1mThis will overwrite configs in ${HOME}/.config!!\e[0m"
 read -p "Press Enter to continue, Ctrl+C to quit..." </dev/tty
 
-sudo pacman -S --needed wget unzip libnotify
+sudo pacman -S --needed wget unzip libnotify playerctl
 
 if ! fc-list | grep -q "JetBrainsMono Nerd Font"; then
     wget -O "/tmp/font.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
