@@ -195,7 +195,7 @@ smart_gaps on
 smart_borders on
 
 # wallpaper
-exec_always feh --bg-scale ~/wallpaper.jpg
+exec_always feh --bg-scale ~/.config/wallpaper.jpg
 exec_always if pgrep polybar; then killall polybar; fi && polybar
 exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
