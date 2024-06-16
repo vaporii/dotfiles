@@ -10,9 +10,10 @@ echo -e "\e[33mkitty (terminal):\e[0m \e[4mhttps://sw.kovidgoyal.net/kitty/binar
 echo -e "\e[33mpicom (compositor):\e[0m \e[4mhttps://github.com/yshui/picom\e[0m"
 echo -e "\e[33mpolybar (status bar):\e[0m \e[4mhttps://github.com/polybar/polybar\e[0m"
 echo -e "\e[33mrofi (app search):\e[0m \e[4mhttps://github.com/davatorium/rofi\e[0m"
-echo -e "\e[33mrofi emoji (emoji search):\e[0m \e[4mhttps://github.com/Mange/rofi-emoji (rofi-emoji on AUR)\e[0m"
+echo -e "\e[33mrofi emoji (emoji search):\e[0m \e[4mhttps://github.com/Mange/rofi-emoji\e[0m"
 echo -e "\e[2m[\e[0m\e[33moptional\e[0m\e[2m] starship (terminal customization):\e[0m \e[4mhttps://starship.rs/guide\e[0m"
 echo -e "\e[2m[\e[0m\e[33moptional\e[0m\e[2m] hyfetch (silly gay neofetch):\e[0m \e[4mhttps://github.com/hykilpikonna/hyfetch\e[0m"
+echo "(most of these can be found on pacman or the AUR)"
 echo ""
 
 echo -e "\e[1mThis will overwrite configs in ${HOME}/.config!!\e[0m"
