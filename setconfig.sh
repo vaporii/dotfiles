@@ -22,7 +22,7 @@ if ! fc-list | grep -q "JetBrainsMono Nerd Font"; then
     fc-cache -fv
 fi
 
-dir="$."
+dir="."
 dst="${HOME}/.config"
 
 
