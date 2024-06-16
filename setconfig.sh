@@ -29,12 +29,12 @@ fi
 dir="."
 dst="${HOME}/.config"
 
-cp ${dir}/dunst -Rf ${dst}/dunst
-cp ${dir}/i3 -Rf ${dst}/i3
-cp ${dir}/kitty -Rf ${dst}/kitty
-cp ${dir}/picom -Rf ${dst}/picom
-cp ${dir}/polybar -Rf ${dst}/polybar
-cp ${dir}/rofi -Rf ${dst}/rofi
+cp ${dir}/dunst -Rf ${dst}/
+cp ${dir}/i3 -Rf ${dst}/
+cp ${dir}/kitty -Rf ${dst}/
+cp ${dir}/picom -Rf ${dst}/
+cp ${dir}/polybar -Rf ${dst}/
+cp ${dir}/rofi -Rf ${dst}/
 
 cp ${dir}/starship.toml ${dst}/starship.toml
 cp ${dir}/hyfetch.json ${dst}/hyfetch.json
