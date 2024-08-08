@@ -20,4 +20,4 @@ if pactl list sinks | grep -q "Mute: yes"; then
     icon=""
 fi
 
-dunstify -h string:x-canonical-private-synchronous:audio "$icon  Volume: " -h int:value:$volume
+dunstify -h string:x-canonical-private-synchronous:audio "$icon  Volume: " -h int:value:$volume -t 1500
