@@ -35,7 +35,7 @@ exec --no-startup-id lxpolkit
 
 exec --no-startup-id xsettingsd
 
-exec_always --no-startup-id xmodmap ~/.Xmodmap
+exec_always --no-startup-id xmodmap ~/.config/.Xmodmap
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
